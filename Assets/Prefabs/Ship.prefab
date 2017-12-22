@@ -342,8 +342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fec2d34b39ea0443a61b90b35fac3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipSpeed: 20
-  bullet: {fileID: 0}
+  shipSpeed: 2
+  fireSpeed: 2
+  laser: {fileID: 50163242843519730, guid: 508369571b706994c92fc21655a5cd24, type: 2}
   mainCanon: {fileID: 4008776519314278}
   leftCanon: {fileID: 4969550501890568}
   rightCanon: {fileID: 4051902992862464}
