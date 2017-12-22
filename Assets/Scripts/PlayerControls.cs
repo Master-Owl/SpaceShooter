@@ -12,7 +12,7 @@ public class PlayerControls : MonoBehaviour {
     public Transform booster;
 
     private float horizontalModifier = 1.5f;
-    private float verticalModifier = 2.0f;
+    private float verticalModifier = 2.25f;
 	private new Rigidbody2D rigidbody;
 
 
