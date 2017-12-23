@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Asteroid
+  - Powerup
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - Asteroids
   - Powerups
   - Player
-  - 
-  - 
+  - Laser
+  - Boundaries
   - 
   - 
   - 
