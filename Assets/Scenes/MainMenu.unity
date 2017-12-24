@@ -618,7 +618,13 @@ MonoBehaviour:
   powerupPrefab: {fileID: 1972184664697652, guid: 600e57b2f8056a543bbe331b341bcbe3,
     type: 2}
   asteroidFrequency: 3
-  powerupFrequency: 1
+  powerupFrequency: 5
+  shieldPowerupFrequency: 25
+  multishotPowerupFrequency: 25
+  speedPowerupFrequency: 25
+  rapidfirePowerupFrequency: 25
+  upgradePowerupFrequency: 25
+  randomPowerupFrequency: 25
 --- !u!4 &1867997072
 Transform:
   m_ObjectHideFlags: 0
