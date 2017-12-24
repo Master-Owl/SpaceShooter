@@ -309,46 +309,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 212932892023951922, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 1339089713
-      objectReference: {fileID: 0}
-    - target: {fileID: 212932892023951922, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 212216734356397716, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 1339089713
-      objectReference: {fileID: 0}
-    - target: {fileID: 212216734356397716, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 212176696883793574, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 1339089713
-      objectReference: {fileID: 0}
-    - target: {fileID: 212176696883793574, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 212852189552597544, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 1339089713
-      objectReference: {fileID: 0}
-    - target: {fileID: 212852189552597544, guid: 372bfaa95e1983d48acadd4c7d4eccda,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 372bfaa95e1983d48acadd4c7d4eccda, type: 2}
   m_IsPrefabParent: 0

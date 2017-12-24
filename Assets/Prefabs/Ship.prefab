@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 60544787823336950}
   m_Layer: 10
   m_Name: Ship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -378,8 +378,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1339089713
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ea64de2f18f015e4fbb16be1bd32698d, type: 3}
   m_Color: {r: 0.6397059, g: 0.6312716, b: 0.3339641, a: 1}
@@ -420,8 +420,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1339089713
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 527556cebd33dc04fa857766e596fe15, type: 3}
   m_Color: {r: 0.74264705, g: 0.16381918, b: 0.16381918, a: 1}
@@ -462,8 +462,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1339089713
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6dc0657a8b2eefc4399f31bc2a33d339, type: 3}
   m_Color: {r: 0.2592993, g: 0.5995586, b: 0.8014706, a: 1}
@@ -504,8 +504,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1339089713
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 60325a43d6047da43be45c03b94b5d57, type: 3}
   m_Color: {r: 0.07239401, g: 0.24717653, b: 0.75735295, a: 1}
