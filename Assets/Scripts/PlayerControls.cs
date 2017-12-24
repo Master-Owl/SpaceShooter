@@ -84,6 +84,7 @@ public class PlayerControls : MonoBehaviour {
     public void Powerup_Shield() {
         shieldPowerup = true;
         // Add some sort of shield sprite around the ship
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
     }
 
     private IEnumerator ReduceSpeed(float modifier, float delayTime)
