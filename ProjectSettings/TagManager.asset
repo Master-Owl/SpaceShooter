@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Asteroid
+  - Powerup
   layers:
   - Default
   - TransparentFX
@@ -13,11 +15,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Asteroids
+  - Powerups
+  - Player
+  - Laser
+  - Boundaries
   - 
   - 
   - 
@@ -40,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Asteroid
+    uniqueID: 4154913127
+    locked: 0
+  - name: Powerup
+    uniqueID: 2972670919
+    locked: 0
+  - name: Player
+    uniqueID: 1339089713
     locked: 0

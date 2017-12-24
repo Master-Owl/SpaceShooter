@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4046378887813304}
   - component: {fileID: 212932892023951922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4969550501890568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftGunTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4717679052044050}
   - component: {fileID: 212176696883793574}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Booster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4051902992862464}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightGunTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4342753727900058}
   - component: {fileID: 212216734356397716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4008776519314278}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MainGunTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 114054423217312430}
   - component: {fileID: 50272886130210994}
   - component: {fileID: 60544787823336950}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4028529739743228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoosterTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4824071795098504}
   - component: {fileID: 212852189552597544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,8 +342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fec2d34b39ea0443a61b90b35fac3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipSpeed: 20
-  bullet: {fileID: 0}
+  shipSpeed: 2
+  fireSpeed: 2
+  laser: {fileID: 50163242843519730, guid: 508369571b706994c92fc21655a5cd24, type: 2}
   mainCanon: {fileID: 4008776519314278}
   leftCanon: {fileID: 4969550501890568}
   rightCanon: {fileID: 4051902992862464}
