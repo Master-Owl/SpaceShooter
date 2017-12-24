@@ -53,6 +53,7 @@ public class PlayerControls : MonoBehaviour {
 
     private void Fire() {
         Rigidbody2D laserFire = Instantiate(laser, mainCanon.position, mainCanon.rotation);
+        laserFire.GetComponent<AudioSource>().Play();
         laserFire.velocity = Vector2.up * LASER_SPEED;
         laserTimer = 1.0f / fireSpeed;
 
