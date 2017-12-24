@@ -20,6 +20,8 @@ public class ObjectSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Physics2D.IgnoreLayerCollision(8, 12); // Ignore collision between asteroids and world boundaries
+		Physics2D.IgnoreLayerCollision(10, 11); // Ignore collision between laser and player
+		Physics2D.IgnoreLayerCollision(9, 11); // Ignore collision between powerups and laser
 		asteroidTimer = ASTEROID_RATIO / asteroidFrequency;
 		powerupTimer  = POWERUP_RATIO / powerupFrequency;
 	}

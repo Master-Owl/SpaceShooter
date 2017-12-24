@@ -35,6 +35,7 @@ public class Asteroid : MonoBehaviour {
 
 	public void Blowup() {
 		if (!outOfBounds) {
+			gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 			gameObject.GetComponent<SpriteRenderer>().enabled = false;
 			gameObject.GetComponent<AudioSource>().PlayOneShot(explosionNoise);
 			// Instantiate(explosionEffect, gameObject.transform.position, gameObject.transform.rotation);
