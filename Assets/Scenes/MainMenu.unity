@@ -615,8 +615,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 1583735030771878, guid: 93f1e42c7862af04882c6df325dac631,
     type: 2}
-  powerupPrefab: {fileID: 0}
-  asteroidFrequency: 1
+  powerupPrefab: {fileID: 1972184664697652, guid: 600e57b2f8056a543bbe331b341bcbe3,
+    type: 2}
+  asteroidFrequency: 3
   powerupFrequency: 1
 --- !u!4 &1867997072
 Transform:

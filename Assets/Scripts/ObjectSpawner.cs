@@ -16,6 +16,8 @@ public class ObjectSpawner : MonoBehaviour {
 	private float powerupTimer;
 	private const float ASTEROID_RATIO = 2f;
 	private const float POWERUP_RATIO = 10f;
+	private const float SPAWN_POINT_Y = 6.25f;
+	private const float SPAWN_MAx_X = 6f;
 
 	// Use this for initialization
 	void Start () {
@@ -29,11 +31,15 @@ public class ObjectSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (asteroidTimer <= 0) {
-			Instantiate(asteroidPrefab);
+			Instantiate(asteroidPrefab, 
+				new Vector2(Random.Range(-SPAWN_MAx_X, SPAWN_MAx_X), SPAWN_POINT_Y), 
+				Quaternion.identity);
 			asteroidTimer = ASTEROID_RATIO / asteroidFrequency;
 		}
 		if (powerupTimer <= 0) {
-			//Instantiate(powerupPrefab);
+			Instantiate(powerupPrefab,
+                new Vector2(Random.Range(-SPAWN_MAx_X, SPAWN_MAx_X), SPAWN_POINT_Y),
+                Quaternion.identity);
 			powerupTimer = POWERUP_RATIO / powerupFrequency;
 		}
 		asteroidTimer -= Time.deltaTime;

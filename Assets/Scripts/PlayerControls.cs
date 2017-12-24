@@ -17,18 +17,20 @@ public class PlayerControls : MonoBehaviour {
     private const float LASER_SPEED = 6.0f;
     private const float POWERUP_DURATION = 5.0f;
     private float laserTimer;
-    private float powerupTimer;
     private float horizontalModifier = 1.5f;
     private float verticalModifier = 2.25f;
 	private new Rigidbody2D rigidbody;
 
-    private bool multiShotPowerup = false;
+    private float multishotPowerupTimer;
+
+    private bool multishotPowerup = false;
+    private bool shieldPowerup = false;
 
     // Use this for initialization
     void Start() {
 		rigidbody = gameObject.GetComponent<Rigidbody2D>();
         laserTimer = 0;
-        powerupTimer = 0;
+        multishotPowerupTimer = 0;
         shipSpeed *= 10.0f;
     }
 
@@ -38,7 +40,7 @@ public class PlayerControls : MonoBehaviour {
             Fire();
         }
         laserTimer -= Time.deltaTime;
-        powerupTimer -= Time.deltaTime;
+        multishotPowerupTimer -= Time.deltaTime;
     }
 
 	void FixedUpdate() {
@@ -54,14 +56,38 @@ public class PlayerControls : MonoBehaviour {
         laserFire.velocity = Vector2.up * LASER_SPEED;
         laserTimer = 1.0f / fireSpeed;
 
-        if (multiShotPowerup) {
+        if (multishotPowerupTimer <= 0) multishotPowerup = false;
+        if (multishotPowerup) {
             Rigidbody2D leftFire = Instantiate(laser, leftCanon.position, leftCanon.rotation);
             Rigidbody2D rightFire = Instantiate(laser, rightCanon.position, rightCanon.rotation);
 
             leftFire.velocity = Vector2.up * LASER_SPEED;
             rightFire.velocity = Vector2.up * LASER_SPEED;
-
-            if (powerupTimer <= 0) multiShotPowerup = false;
         }
+    }
+
+    public void Powerup_Multishot() {
+        multishotPowerup = true;
+        multishotPowerupTimer = POWERUP_DURATION;
+    }
+
+    public void Powerup_Speed(float modifier = 2f) {
+        shipSpeed *= modifier;
+        StartCoroutine(ReduceSpeed(modifier, POWERUP_DURATION));
+    }
+
+    public void Powerup_RapidFire() {
+        fireSpeed *= 1.5f;
+    }
+
+    public void Powerup_Shield() {
+        shieldPowerup = true;
+        // Add some sort of shield sprite around the ship
+    }
+
+    private IEnumerator ReduceSpeed(float modifier, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        shipSpeed /= modifier;
     }
 }
