@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42cdf9201bca31948a94b689574e5de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeInterval: 3
+  timeInterval: 2.5
   delayStart: 0
   useMovement: 1
   pointA: {x: 0, y: -8.8}
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5f714135ca3ad429f9cf70f0e5ad80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3.5
+  seconds: 3
 --- !u!1 &2042562049
 GameObject:
   m_ObjectHideFlags: 0
