@@ -9,8 +9,6 @@ public class Asteroid : MonoBehaviour {
 
 	private ParticleSystem explosionEffect;
 	private new Rigidbody2D rigidbody;
-	private const float SPAWN_POINT_Y = 6.25f;
-	private const float SPAWN_MAx_X = 6f;
 	private const float MIN_SPEED = 1.5f;
 	private const float MAX_SPEED = 6.0f;
 	private bool outOfBounds = false;
@@ -20,12 +18,10 @@ public class Asteroid : MonoBehaviour {
         gameObject.AddComponent<AudioSource>();
         SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();
 		renderer.sprite = asteroidSprites[Random.Range(0, asteroidSprites.Length)];
-
-		gameObject.transform.position = new Vector2(Random.Range(-SPAWN_MAx_X, SPAWN_MAx_X), SPAWN_POINT_Y);
 		explosionEffect = gameObject.GetComponent<ParticleSystem>();
 		rigidbody = gameObject.GetComponent<Rigidbody2D>();
 		rigidbody.AddTorque(2f, ForceMode2D.Impulse);
-		rigidbody.velocity = new Vector2(Random.Range(-.25f, .25f), -Random.Range(MIN_SPEED, MAX_SPEED));
+		rigidbody.velocity = new Vector2(Random.Range(-.35f, .35f), -Random.Range(MIN_SPEED, MAX_SPEED));
 	}
 	
 	// Update is called once per frame
